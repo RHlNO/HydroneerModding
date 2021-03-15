@@ -10,11 +10,11 @@ HydroUMH allows you to create a baseline actor blueprint that will be automatica
 
 **Setting up HydroUMH**
 
-Getting started with Hydro UMH is decently simple. Included in this repository is a file titled &quot;HydroUMH.zip&quot;. Download it, extract its contents, and place them in the `content` directory of your Unreal project. The next time you launch the project, you should see that a folder called &quot;HydroUMH&quot; has been added to your content viewport in the project and you will find two things within it. Inside the &quot;HydroUMH&quot; folder you will see &quot;BP\_HookParent&quot; and under &quot;HydroUMH/Hooks&quot; you will see &quot;BP\_HookTemplate&quot;. To verify everything is set up correctly, make sure &quot;BP\_HookTemplate&quot; is a child of &quot;BP\_HookParent&quot;. Now you&#39;re all set up and ready to start modding with HydroUMH.
+Getting started with Hydro UMH is decently simple. Included in this repository is a file titled &quot;HydroUMH.zip&quot;. Download it, extract its contents, and place them in the `content` directory of your Unreal project. The next time you launch the project, you should see that a folder called `HydroUMH` has been added to your content viewport in the project and you will find two things within it. Inside the `HydroUMH` folder you will see `BP\_HookParent` and under `HydroUMH/Hooks` you will see `BP\_HookTemplate`. To verify everything is set up correctly, make sure `BP\_HookTemplate` is a child of `BP\_HookParent`. Now you&#39;re all set up and ready to start modding with HydroUMH.
 
 **Using HydroUMH for Modding**
 
-Once you have HydroUMH set up for your project, all you need to do is copy &quot;BP\_HookTemplate&quot; and rename it to your mod. As an example, we will be creating a test mod. In this case I would name mine BP\_TestMod:
+Once you have HydroUMH set up for your project, all you need to do is copy `BP\_HookTemplate` and rename it to your mod. As an example, we will be creating a test mod. In this case I would name mine BP\_TestMod:
 
 ![](../GitImg/ModRef1.png)
 
@@ -22,17 +22,17 @@ Now that you have your mod hook made, open it up and move to its event graph. Yo
 
 ![](../GitImg/ModRef2.png)
 
-These are all events that will be triggered automatically by the game or by HydroUMH. BeginPlay, and Tick should already be familiar to you, though it is important that &quot;Parent: Begin Play&quot; be left where it is, and any additional code be created after it. This is so that more functionality may be added to HydroUMH in the future.
+These are all events that will be triggered automatically by the game or by HydroUMH. BeginPlay, and Tick should already be familiar to you, though it is important that `Parent: Begin Play` be left where it is, and any additional code be created after it. This is so that more functionality may be added to HydroUMH in the future.
 
 The three new events are all save and load components of HydroUMH. You can use these to build save functionality as you wish.
 
-Another function you have available to you is the &quot;Write Hook Log&quot; function. You can use this to write data to an in-game log regarding your mod. This log can be accessed by pressing &quot;F6&quot; in game. For our test mod, we&#39;ll just write a little output to the log, so we know it&#39;s working:
+Another function you have available to you is the `Write Hook Log` function. You can use this to write data to an in-game log regarding your mod. This log can be accessed by pressing `F6` in game. For our test mod, we&#39;ll just write a little output to the log, so we know it&#39;s working:
 
 ![](../GitImg/ModRef3.png)
 
 When you go to package your mod, package in Unreal as normal, and go about your normal modding pipeline. The only additional asset you will need to include in your Pak is the Mod Hook asset you have created. In the case of this example, we will need to include BP\_TestMod. **Do not** include the template BP\_HookParent from your project.
 
-The final step to ensure your mods works with HydroUMH is to the mod Pak file the same as your mod hook blueprint name. So, in the case of our test mod, we would name our Pak &quot;###\_TestMod\_P.pak&quot;. The &quot;###&quot; representing load order index can be used like normal. Make sure you also install &quot;500\_HydroUMH\_P.pak&quot; as all UMH mods depend on it.
+The final step to ensure your mods works with HydroUMH is to the mod Pak file the same as your mod hook blueprint name. So, in the case of our test mod, we would name our Pak `###\_TestMod\_P.pak`. The `###` representing load order index can be used like normal. Make sure you also install `500\_HydroUMH\_P.pak` as all UMH mods depend on it.
 
 And here we can see our in-game log saying our mod was loaded successfully and with our log output &quot;This is a test mod!&quot;
 
