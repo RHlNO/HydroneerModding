@@ -1,4 +1,4 @@
-# HydroneerModding
+# Rhino's Hydroneer Modding Home
 Repository for hosting mod files and documentation for the game Hydroneer.
 
 ### Check the the Release Mods directory for mod Pak files.
