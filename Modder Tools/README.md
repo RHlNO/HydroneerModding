@@ -30,7 +30,7 @@ Another function you have available to you is the &quot;Write Hook Log&quot; fun
 
 ![](../GitImg/ModRef3.png)
 
-When you go to package your mod, package in Unreal as normal, and go about your normal modding pipeline. The only additional asset you will need to include in your Pak is the Mod Hook asset you have created. In the case of this example, we will need to include BP\_TestMod. **Do**** not** include the template BP\_HookParent from your project.
+When you go to package your mod, package in Unreal as normal, and go about your normal modding pipeline. The only additional asset you will need to include in your Pak is the Mod Hook asset you have created. In the case of this example, we will need to include BP\_TestMod. **Do not** include the template BP\_HookParent from your project.
 
 The final step to ensure your mods works with HydroUMH is to the mod Pak file the same as your mod hook blueprint name. So, in the case of our test mod, we would name our Pak &quot;###\_TestMod\_P.pak&quot;. The &quot;###&quot; representing load order index can be used like normal. Make sure you also install &quot;500\_HydroUMH\_P.pak&quot; as all UMH mods depend on it.
 
