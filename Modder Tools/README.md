@@ -16,11 +16,11 @@ Getting started with Hydro UMH is decently simple. Included in this repository i
 
 Once you have HydroUMH set up for your project, all you need to do is copy &quot;BP\_HookTemplate&quot; and rename it to your mod. As an example, we will be creating a test mod. In this case I would name mine BP\_TestMod:
 
-![](RackMultipart20210315-4-1prj2i0_html_a688d234ea3350f0.png)
+![](../GitImg/ModRef1.png)
 
 Now that you have your mod hook made, open it up and move to its event graph. You should see a setup that looks like the picture below.
 
-![](RackMultipart20210315-4-1prj2i0_html_93d4047e8f8bfe37.png)
+![](../GitImg/ModRef2.png)
 
 These are all events that will be triggered automatically by the game or by HydroUMH. BeginPlay, and Tick should already be familiar to you, though it is important that &quot;Parent: Begin Play&quot; be left where it is, and any additional code be created after it. This is so that more functionality may be added to HydroUMH in the future.
 
@@ -28,7 +28,7 @@ The three new events are all save and load components of HydroUMH. You can use t
 
 Another function you have available to you is the &quot;Write Hook Log&quot; function. You can use this to write data to an in-game log regarding your mod. This log can be accessed by pressing &quot;F6&quot; in game. For our test mod, we&#39;ll just write a little output to the log, so we know it&#39;s working:
 
-![](RackMultipart20210315-4-1prj2i0_html_a8a1d9eafc6801b8.png)
+![](../GitImg/ModRef3.png)
 
 When you go to package your mod, package in Unreal as normal, and go about your normal modding pipeline. The only additional asset you will need to include in your Pak is the Mod Hook asset you have created. In the case of this example, we will need to include BP\_TestMod. **Do**** not** include the template BP\_HookParent from your project.
 
@@ -36,17 +36,17 @@ The final step to ensure your mods works with HydroUMH is to the mod Pak file th
 
 And here we can see our in-game log saying our mod was loaded successfully and with our log output &quot;This is a test mod!&quot;
 
-![](RackMultipart20210315-4-1prj2i0_html_ed0d3dccd9c38d4a.png)
+![](../GitImg/ModRef4.png)
 
 Now that we have made a working mod hook, we can add whatever we like to our mod hook. We can use it to spawn additional assets, run background code, or modify game-state variables. Its really open ended from here.
 
 The in-game log can also be accessed from any blueprint, you&#39;ll just need to set up a proper template and add some code like this in the constructor of the blueprint you want to have access to the log:
 
-![](RackMultipart20210315-4-1prj2i0_html_efc457dd1050affd.png)
+![](../GitImg/ModRef5.png)
 
 Obviously, you&#39;ll need to create a template &quot;UI\_ModLoadList&quot; to do so. Then you can write to the debug UI at any time using that variable:
 
-![](RackMultipart20210315-4-1prj2i0_html_701cc9cf583ec5eb.png)
+![](../GitImg/ModRef6.png)
 
 **What is the future for HydroUMH?**
 
