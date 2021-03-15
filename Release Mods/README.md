@@ -1,5 +1,5 @@
 # Hydroneer Pak Mods
-Follow instructions on the [Bridgepour Legacy Mods Page](https://bridgepour.com/legacy-mods) to install mods.
+Follow instructions on the [Bridgepour Mod FAQ Page](https://bridgepour.com/mod-faq) to install mods.
 
 ## All mods hosted here will require HydroUMH to be installed
 
