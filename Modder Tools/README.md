@@ -10,7 +10,7 @@ HydroUMH allows you to create a baseline actor blueprint that will be automatica
 
 **Setting up HydroUMH**
 
-Getting started with Hydro UMH is decently simple. Included in this repository is a file titled &quot;HydroUMH.zip&quot;. Download it, extract its contents, and place them in the &quot;content&quot; directory of your Unreal project. The next time you launch the project, you should see that a folder called &quot;HydroUMH&quot; has been added to your content viewport in the project and you will find two things within it. Inside the &quot;HydroUMH&quot; folder you will see &quot;BP\_HookParent&quot; and under &quot;HydroUMH/Hooks&quot; you will see &quot;BP\_HookTemplate&quot;. To verify everything is set up correctly, make sure &quot;BP\_HookTemplate&quot; is a child of &quot;BP\_HookParent&quot;. Now you&#39;re all set up and ready to start modding with HydroUMH.
+Getting started with Hydro UMH is decently simple. Included in this repository is a file titled &quot;HydroUMH.zip&quot;. Download it, extract its contents, and place them in the `content` directory of your Unreal project. The next time you launch the project, you should see that a folder called &quot;HydroUMH&quot; has been added to your content viewport in the project and you will find two things within it. Inside the &quot;HydroUMH&quot; folder you will see &quot;BP\_HookParent&quot; and under &quot;HydroUMH/Hooks&quot; you will see &quot;BP\_HookTemplate&quot;. To verify everything is set up correctly, make sure &quot;BP\_HookTemplate&quot; is a child of &quot;BP\_HookParent&quot;. Now you&#39;re all set up and ready to start modding with HydroUMH.
 
 **Using HydroUMH for Modding**
 
