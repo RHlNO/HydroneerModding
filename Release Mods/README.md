@@ -6,5 +6,5 @@ Follow instructions on the [Bridgepour Legacy Mods Page](https://bridgepour.com/
 
 | Mod File  | Description |
 | ------------- | ------------- |
-| [HydroUMH](https://github.com/RHlNO/HydroneerModding/blob/main/Release%20Mods/500-HydroUMH_P.pak) | Mod loader and framework for background functionality. |
-| [Infinite Durability](https://github.com/RHlNO/HydroneerModding/blob/main/Release%20Mods/500-InfiniteDurability_P.pak) | Prevents drills, filters, and smelters from breaking. |
+| [HydroUMH](https://github.com/RHlNO/HydroneerModding/raw/main/Release%20Mods/500-HydroUMH_P.pak) | Mod loader and framework for background functionality. |
+| [Infinite Durability](https://github.com/RHlNO/HydroneerModding/raw/main/Release%20Mods/500-InfiniteDurability_P.pak) | Prevents drills, filters, and smelters from breaking. |
