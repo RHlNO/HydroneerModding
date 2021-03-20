@@ -10,7 +10,7 @@ HydroUMH allows you to create a baseline actor blueprint that will be automatica
 
 **Setting up HydroUMH**
 
-Getting started with Hydro UMH is decently simple. Included in this repository is a file titled &quot;HydroUMH.zip&quot;. Download it, extract its contents, and place them in the `content` directory of your Unreal project. The next time you launch the project, you should see that a folder called `HydroUMH` has been added to your content viewport in the project and you will find two things within it. Inside the `HydroUMH` folder you will see `BP_HookParent` and under `HydroUMH/Hooks` you will see `BP_HookTemplate`. To verify everything is set up correctly, make sure `BP_HookTemplate` is a child of `BP_HookParent`. Now you&#39;re all set up and ready to start modding with HydroUMH.
+Getting started with Hydro UMH is decently simple. Included in this repository is a file titled &quot;HydroUMH.zip&quot;. Download it, extract its contents, and place them in the `content` directory of your Unreal project. The next time you launch the project, you should see that a folder called `HydroUMH` has been added to your content viewport in the project and you will find three things within it. Inside the `/HydroUMH` folder you will see `BP_HookParent` and `UI_ModLoadList` and under `/HydroUMH/Hooks` you will see `BP_HookTemplate`. To verify everything is set up correctly, make sure `BP_HookTemplate` is a child of `BP_HookParent`. Now you&#39;re all set up and ready to start modding with HydroUMH.
 
 **Using HydroUMH for Modding**
 
@@ -30,7 +30,7 @@ Another function you have available to you is the `Write Hook Log` function. You
 
 ![](../GitImg/ModRef3.png)
 
-When you go to package your mod, package in Unreal as normal, and go about your normal modding pipeline. The only additional asset you will need to include in your Pak is the Mod Hook asset you have created. In the case of this example, we will need to include BP\_TestMod. **Do not** include the template BP\_HookParent from your project.
+When you go to package your mod, package in Unreal as normal, and go about your normal modding pipeline. The only additional asset you will need to include in your Pak is the Mod Hook asset you have created. In the case of this example, we will need to include BP\_TestMod. **Do not** include the template BP\_HookParent or UI\ModLoadList from your project.
 
 The final step to ensure your mods works with HydroUMH is to the mod Pak file the same as your mod hook blueprint name. So, in the case of our test mod, we would name our Pak `###_TestMod_P.pak`. The `###` representing load order index can be used like normal. Make sure you also install `500_HydroUMH_P.pak` as all UMH mods depend on it.
 
