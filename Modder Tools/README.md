@@ -1,5 +1,6 @@
 # **Welcome to HydroUMH**
 
+### NOTE HYDRO UMH IS DEPRECATED AS  OF HYDRONEER v2.0. PLEASE REFER TO STEAM WORKSHOP MODS FOR HYDRONEER 2.0+
 **What is Hydro UMH?**
 
 Short for Hydroneer Universal Mod Hook, HydroUMH is a way of getting mod content into the game without fiddling around with replacing existing content. Normally, if your mod adds new content or actors to the world, you have to modify an existing item to spawn your new item. This can run into all kinds of dependency issues when multiple mods overwrite the same item and its just more time consuming in general to do. HydroUMH replaces that functionality with a cleaner, easier version.
